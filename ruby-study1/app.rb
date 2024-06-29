@@ -53,5 +53,15 @@ puts(user[:last_name])
 user.each do |key, value|
   puts(value)
 end
-
 # 配列やハッシュのことを「コンテナ」と呼ぶらしい
+
+# 正規表現
+puts(/Ruby/ =~ 'これはRubyです。')
+
+# 他ファイルを読み込む
+require_relative 'foo'
+foo
+
+# 標準ライブラリを読み込む
+require 'date'
+puts(Date.today)
