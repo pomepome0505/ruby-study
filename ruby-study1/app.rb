@@ -35,3 +35,23 @@ y = 11
   puts(y)
   y += 1
 end
+
+# 配列の扱い方
+names = ['田中', '鈴木']
+names.each do |name|
+  puts(name)
+end
+
+# シンボルの扱い方
+sym = :foo
+puts(sym)
+
+# ハッシュの扱い方
+user = { last_name: '田中', first_name: '太郎' }
+puts(user[:last_name])
+
+user.each do |key, value|
+  puts(value)
+end
+
+# 配列やハッシュのことを「コンテナ」と呼ぶらしい
